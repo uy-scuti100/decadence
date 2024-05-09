@@ -50,17 +50,14 @@ export default function Services() {
 					{videos &&
 						videos.map((item, i) => {
 							return (
-								<div
-									className="relative w-full h-[400px]  md:flex md:space-x-0 md:space-y-0"
-									key={i}
-								>
+								<div className="relative w-full h-[400px] " key={i}>
 									<video
 										autoPlay
 										defaultmuted
 										loop
 										muted
 										playsInline
-										className="object-cover w-full h-full rounded-3xl"
+										className="object-cover w-full h-[400px] rounded-3xl"
 									>
 										<source src={item.link} type="video/mp4" />
 									</video>

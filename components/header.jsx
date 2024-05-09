@@ -8,7 +8,7 @@ import Button from "./button-component";
 
 export default function Navbar() {
 	return (
-		<header className="absolute z-50 w-full px-3 mx-auto bg-white ">
+		<header className="absolute z-[9999999999] w-full px-3 mx-auto bg-white ">
 			<nav className="relative flex items-center justify-between py-2 md:py-0">
 				<Link href={"/"}>
 					<Image
