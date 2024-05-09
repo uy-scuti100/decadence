@@ -51,20 +51,24 @@ export default function Services() {
 						videos.map((item, i) => {
 							return (
 								<div
-									className="relative w-full h-[400px] space-x-8 space-y-8 md:flex md:space-x-0 md:space-y-0"
+									className="relative w-full h-[400px]  md:flex md:space-x-0 md:space-y-0"
 									key={i}
 								>
 									<video
 										autoPlay
+										defaultmuted
 										loop
 										muted
 										playsInline
-										className="object-cover w-full h-full bg-center bg-cover rounded-3xl"
-										style={{ pointerEvents: "none" }}
+										className="object-cover w-full h-full rounded-3xl"
 									>
 										<source src={item.link} type="video/mp4" />
 									</video>
-									<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3  sm:left-4 bottom-5 sm:bottom-3">
+									<div
+										style={{ pointerEvents: "none" }}
+										className="absolute inset-0 z-10"
+									></div>
+									<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3 left-4 bottom-5 sm:bottom-3">
 										<h1 className="text-3xl font-bold text-white">
 											{item.type}
 										</h1>
