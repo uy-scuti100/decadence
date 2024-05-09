@@ -3,7 +3,7 @@ import Button from "@/components/button-component";
 const videos = [
 	{
 		link: "/hair-barb.mp4",
-		type: "Cuts",
+		type: " Hair Cuts",
 	},
 	{
 		link: "/female-hair.mp4",

@@ -1,3 +1,4 @@
+import Button from "@/components/button-component";
 import Image from "next/image";
 
 const masters = [
@@ -85,7 +86,7 @@ export default function Team() {
 										className="object-cover bg-top rounded-3xl"
 									/>
 								</div>
-								<div className="pl-5 bg-light-accent/20 group-hover:scale-95  border-l-[3px] border-accent transition-all duration-300 ease-linear rounded-l-xl ">
+								<div className="py-2 pl-5 bg-light-accent/20 group-hover:scale-95  border-l-[3px] border-accent transition-all duration-300 ease-linear">
 									<h2 className="pb-2 text-xl font-bold font-staat">{name}</h2>
 									<p className="pb-2 text-xs uppercase">{info}</p>
 								</div>
@@ -94,6 +95,13 @@ export default function Team() {
 					})}
 				</div>
 			}
+			<div className="flex justify-center mt-20">
+				<Button
+					link={"/team"}
+					text={"Learn more about our team"}
+					className={"px-20 whitespace-nowrap"}
+				/>
+			</div>
 		</section>
 	);
 }

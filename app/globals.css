@@ -47,3 +47,26 @@ body {
 	left: 0;
 	right: 0;
 }
+
+.logo_carousel {
+	animation: carousel 200s linear infinite;
+}
+.logo_carousel_two {
+	animation: carousel 150s linear infinite;
+}
+.logo_carousel_three {
+	animation: carousel 100s linear infinite;
+}
+.transparent-text {
+	color: #b4b4b48d;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+@keyframes carousel {
+	from {
+		left: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}

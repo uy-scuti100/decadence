@@ -1,3 +1,4 @@
+import Button from "@/components/button-component";
 import { InfiniteMovingCards } from "@/components/moving-cards";
 
 import data from "@/utils/data/rev.json";
@@ -31,6 +32,19 @@ export default function Testimonials() {
 					<InfiniteMovingCards items={data2} speed="slow" direction="right" />
 					<InfiniteMovingCards items={data3} speed="slow" />
 				</div>
+			</div>
+			<div className="flex flex-col items-center justify-center mt-20">
+				<p className="pb-10 text-4xl text-center font-staat">
+					Don't just take our word for it. See what others are saying about our
+					services.
+				</p>
+				<Button
+					link={
+						"https://www.google.com/maps/place/Decadence+Hair+%26+Beauty+Salon/@51.5199726,-0.1515538,14z/data=!4m8!3m7!1s0x48761b2ddf1fef8b:0x1f7c066e3a63a9a!8m2!3d51.5199726!4d-0.1309544!9m1!1b1!16s%2Fg%2F1tf_msxv?entry=ttu"
+					}
+					text={"See the reviews for yourself"}
+					className={"px-10 whitespace-nowrap"}
+				/>
 			</div>
 		</section>
 	);

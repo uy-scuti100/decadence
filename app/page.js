@@ -8,6 +8,7 @@ import Gallery from "./_components/gallery";
 import WhyChoseUs from "./_components/why-choose-us";
 import AboutUs from "./_components/about-us";
 import Team from "./_components/team";
+import Blog from "./_components/blog";
 
 export default function page() {
 	return (
@@ -21,6 +22,7 @@ export default function page() {
 			<AboutUs />
 			<Team />
 			<Testimonials />
+			<Blog />
 		</div>
 	);
 }

@@ -7,6 +7,8 @@ export default function Button({ text, link, className, showArrow = true }) {
 	return (
 		<Link
 			href={link}
+			{...(link.startsWith("http") && { target: "_blank" })}
+			{...(link.startsWith("http") && { rel: "noreferrer" })}
 			className={cn(
 				"relative flex items-center justify-center gap-5 px-6 py-3 overflow-hidden text-white transition-all duration-500 ease-in-out border border-white rounded-full bg-accent group hover:bg-opacity-90",
 				className

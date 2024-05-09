@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -77,10 +78,10 @@ export const InfiniteMovingCards = ({
 			>
 				{items.map((item, idx) => (
 					<li
-						className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+						className="w-[350px] max-w-full relative rounded-2xl  border flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
 						key={item.name}
 					>
-						<blockquote>
+						<blockquote className="flex flex-col justify-between h-full">
 							<div
 								aria-hidden="true"
 								className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
@@ -90,14 +91,25 @@ export const InfiniteMovingCards = ({
 							</span>
 							<div className="relative z-20 flex flex-row items-center gap-6 mt-6">
 								<div>
-									<img
-										src={item.profileImage}
-										alt=""
-										className="object-cover w-20 h-20 rounded-full"
-									/>
+									{item.profileImage ? (
+										<Image
+											src={item.profileImage}
+											alt={item.name}
+											className="object-cover w-16 h-16 rounded-full"
+											width={64}
+											height={64}
+											onError={(e) => {
+												e.target.onerror = null;
+												e.target.src = "/user-image.webp";
+											}}
+										/>
+									) : (
+										<div className="w-16 h-16 bg-gray-200 rounded-full" />
+									)}
 								</div>
+
 								<div>
-									<span className="text-sm leading-[1.6] text-gray-400 font-normal font-staat">
+									<span className="text-sm leading-[1.6] font-normal font-staat">
 										{item.name}
 									</span>
 								</div>
