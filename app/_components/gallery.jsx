@@ -26,45 +26,22 @@ export default function Gallery() {
 				<div className="grid gap-4">
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-17.jpg"
 							alt=""
 						/>
 					</div>
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-15.jpg"
 							alt=""
 						/>
 					</div>
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-							alt=""
-						/>
-					</div>
-				</div>
-				<div className="grid gap-4">
-					<div>
-						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-							alt=""
-						/>
-					</div>
-					<div>
-						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-							alt=""
-						/>
-					</div>
-					<div>
-						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-9.jpg"
 							alt=""
 						/>
 					</div>
@@ -72,22 +49,22 @@ export default function Gallery() {
 				<div className="grid gap-4">
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/DecadenceHairBeautySalon_UKD_253042_4_xxx-1024x683.jpg"
 							alt=""
 						/>
 					</div>
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/DecadenceHairBeautySalon_UKD_253042_4_xx-1024x683.jpg"
 							alt=""
 						/>
 					</div>
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-21.jpg"
 							alt=""
 						/>
 					</div>
@@ -95,22 +72,45 @@ export default function Gallery() {
 				<div className="grid gap-4">
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-19.jpg"
 							alt=""
 						/>
 					</div>
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/DecadenceHairBeautySalon_UKD_253042_4_x-1024x683.jpg"
 							alt=""
 						/>
 					</div>
 					<div>
 						<img
-							className="h-auto max-w-full rounded-lg"
-							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-12.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div className="grid gap-4">
+					<div>
+						<img
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-10.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-13.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							className="object-cover h-full max-w-full rounded-lg"
+							src="https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-5.jpg"
 							alt=""
 						/>
 					</div>

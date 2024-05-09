@@ -7,31 +7,30 @@ export default function HeroSection() {
 		<div className="relative w-full h-screen overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover bg-placeholder">
 			<HeroVideo />
 
-			<div className="absolute z-50 left-3 md:left-12 bottom-12">
+			<div className="absolute left-0 z-50 md:left-12 bottom-12">
 				<h1
 					style={{ fontSize: "clamp(2.5rem, 1.6713rem + 3.5359vw, 4.5rem)" }}
-					className="mb-5  text-white capitalize text-balance w-[90%] font-staat"
+					className="mb-5 ml-3 text-white capitalize text-balance w-[90%] font-staat"
 				>
 					Central London's most {""}
 					<span className="px-2 bg-white rounded-xl text-accent font-staat">
 						favourite
 					</span>{" "}
 					boutique
-					<br className="hidden sm:blocck" /> for hair & beauty Since{" "}
+					<br className="hidden sm:block" /> for hair & beauty Since{" "}
 					<span className="px-2 bg-white rounded-xl text-accent font-staat">
 						2011.
 					</span>
 				</h1>
-				<p className="mb-8 text-sm italic font-bold leading-tight text-white uppercase">
+				<p className="mb-8 ml-3 text-sm italic font-bold leading-tight text-white uppercase">
 					We Are The best you can find in Bloomsburg
 				</p>
-
-				<div className="flex items-center">
+				<div className="flex items-center mx-3">
 					<Button
 						link={"https://www.fresha.com/providers/decadence-el3a9eor"}
 						text={"Book an Appointment"}
-						className={"sm:px-20  w-full sm:w-auto"}
-					/>
+						className={"sm:px-20 w-full sm:w-auto px-0"}
+					></Button>
 				</div>
 			</div>
 

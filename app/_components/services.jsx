@@ -1,4 +1,8 @@
+"use client";
+
 import Button from "@/components/button-component";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const videos = [
 	{
@@ -22,7 +26,49 @@ const videos = [
 		type: "Body masssage",
 	},
 ];
+
+const images = [
+	{
+		link: "/hair-cut-service.webp",
+		type: " Hair Cuts",
+	},
+	{
+		link: "/hair-do-female.webp",
+		type: "Styling",
+	},
+	{
+		link: "/pex-1.jpg",
+
+		type: "Colouring",
+	},
+	{
+		link: "/therapy.webp",
+		type: "Beauty Therapy",
+	},
+	{
+		link: "/pex-2.jpg",
+
+		type: "Body masssage",
+	},
+];
+
 export default function Services() {
+	const [isMobile, setIsMobile] = useState(true);
+	useEffect(() => {
+		const handleChange = () => {
+			const screensize = window.innerWidth;
+			if (screensize <= 960) {
+				setIsMobile(true);
+			} else {
+				setIsMobile(false);
+			}
+		};
+
+		handleChange();
+
+		window.addEventListener("resize", handleChange);
+		return () => window.removeEventListener("resize", handleChange);
+	}, []);
 	return (
 		<section className="relative mt-40 maxxy">
 			<div className="absolute md:bg-accent/30 bg-accent/20 h-[30vh] w-[50vh] top-10 right-0 -z-10 blur-[80px]" />
@@ -46,35 +92,8 @@ export default function Services() {
 				</div>
 
 				{/* videos */}
-				<div className="grid grid-cols-1 gap-10 mt-20 md:grid-cols-2">
-					{videos &&
-						videos.map((item, i) => {
-							return (
-								<div className="relative w-full h-[400px] " key={i}>
-									<video
-										autoPlay
-										defaultmuted
-										loop
-										muted
-										playsInline
-										className="object-cover w-full h-[400px] rounded-3xl"
-										style={{ pointerEvents: "none", touchAction: "none" }}
-									>
-										<source src={item.link} type="video/mp4" />
-									</video>
-									{/* <div
-										style={{ pointerEvents: "none" }}
-										className="absolute inset-0 z-10"
-									></div> */}
-									<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3 left-4 bottom-5 sm:bottom-3">
-										<h1 className="text-3xl font-bold text-white">
-											{item.type}
-										</h1>
-									</div>
-								</div>
-							);
-						})}
-				</div>
+
+				{isMobile ? <ImageComponent /> : <VideoComponent />}
 			</div>
 
 			<div className="flex justify-center mt-20">
@@ -88,15 +107,57 @@ export default function Services() {
 	);
 }
 
-// CUTS, STYLING & COLOURING
+export const ImageComponent = () => {
+	return (
+		<div className="grid grid-cols-1 gap-10 mt-20 md:grid-cols-2">
+			{images &&
+				images.map((item, i) => {
+					return (
+						<div className=" w-full h-[400px] relative " key={i}>
+							<Image
+								src={item.link}
+								alt={item.type}
+								fill
+								className="object-cover w-full h-[400px] rounded-3xl"
+							/>
 
-// <iframe
-// src={
-//     "https://decadencesalon.co.uk/video/decadence_video.mp4"
-// }
-// title={item.type}
-// frameBorder="0"
-// allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-// allowFullScreen
-// className="object-cover w-full h-full"
-// />
+							<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3 left-4 bottom-5 sm:bottom-3">
+								<h1 className="text-3xl font-bold text-white">{item.type}</h1>
+							</div>
+						</div>
+					);
+				})}
+		</div>
+	);
+};
+export const VideoComponent = () => {
+	return (
+		<div className="grid grid-cols-1 gap-10 mt-20 md:grid-cols-2">
+			{videos &&
+				videos.map((item, i) => {
+					return (
+						<div className="relative w-full h-[400px] " key={i}>
+							<video
+								autoPlay
+								defaultmuted
+								loop
+								muted
+								playsInline
+								className="object-cover w-full h-[400px] rounded-3xl"
+								style={{ pointerEvents: "none", touchAction: "none" }}
+							>
+								<source src={item.link} type="video/mp4" />
+							</video>
+							{/* <div
+										style={{ pointerEvents: "none" }}
+										className="absolute inset-0 z-10"
+									></div> */}
+							<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3 left-4 bottom-5 sm:bottom-3">
+								<h1 className="text-3xl font-bold text-white">{item.type}</h1>
+							</div>
+						</div>
+					);
+				})}
+		</div>
+	);
+};

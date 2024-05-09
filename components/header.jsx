@@ -1,15 +1,35 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { MdOutlineMenu } from "react-icons/md";
 import Button from "./button-component";
 
 export default function Navbar() {
+	const [visible, setVisible] = useState(true);
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollPos = window.scrollY;
+			setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+			setPrevScrollPos(currentScrollPos);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [prevScrollPos]);
+
 	return (
-		<header className="absolute z-[9999999999] w-full px-3 mx-auto bg-white ">
-			<nav className="relative flex items-center justify-between py-2 md:py-0">
+		<header
+			className={` ${
+				visible
+					? "fixed nav-visible top-3  duration-500 ease-in-out transition-all"
+					: "absolute nav-hidden -top-32 duration-500 ease-in-out transition-all"
+			} z-[9999999] md:static px-3 rounded-full md:rounded-none bg-white left-0 right-0 mx-3 sm:mx-5 md:mx-0 border border-accent md:border-none`}
+		>
+			<nav className="flex items-center justify-between py-2 md:py-0">
 				<Link href={"/"}>
 					<Image
 						src="/logo.jpeg"
