@@ -8,6 +8,7 @@ export default function HeroVideo() {
 			muted
 			playsInline
 			className="object-cover w-full h-full bg-center bg-cover"
+			style={{ pointerEvents: "none" }}
 		>
 			<source
 				src="https://decadencesalon.co.uk/video/decadence_video.mp4"

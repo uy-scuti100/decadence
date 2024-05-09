@@ -59,7 +59,8 @@ export default function Services() {
 										loop
 										muted
 										playsInline
-										className="object-cover w-full h-full bg-center bg-cover rounded-3xl "
+										className="object-cover w-full h-full bg-center bg-cover rounded-3xl"
+										style={{ pointerEvents: "none" }}
 									>
 										<source src={item.link} type="video/mp4" />
 									</video>
