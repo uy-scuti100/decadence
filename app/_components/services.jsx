@@ -58,13 +58,14 @@ export default function Services() {
 										muted
 										playsInline
 										className="object-cover w-full h-[400px] rounded-3xl"
+										style={{ pointerEvents: "none", touchAction: "none" }}
 									>
 										<source src={item.link} type="video/mp4" />
 									</video>
-									<div
+									{/* <div
 										style={{ pointerEvents: "none" }}
 										className="absolute inset-0 z-10"
-									></div>
+									></div> */}
 									<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3 left-4 bottom-5 sm:bottom-3">
 										<h1 className="text-3xl font-bold text-white">
 											{item.type}
