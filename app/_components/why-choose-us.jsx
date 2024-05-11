@@ -95,7 +95,8 @@ export default function WhyChoseUs() {
 											<Image
 												src={item.image}
 												alt={item.title}
-												className="object-cover w-full h-full"
+												className="object-cover w-full h-full rounded-3xl"
+												priority={true}
 											/>
 										</div>
 									</AccordionContent>

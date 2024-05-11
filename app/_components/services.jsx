@@ -119,6 +119,7 @@ export const ImageComponent = () => {
 								alt={item.type}
 								fill
 								className="object-cover w-full h-[400px] rounded-3xl"
+								priority={true}
 							/>
 
 							<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3 left-4 bottom-5 sm:bottom-3">

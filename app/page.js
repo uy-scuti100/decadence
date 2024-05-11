@@ -9,12 +9,14 @@ import WhyChoseUs from "./_components/why-choose-us";
 import AboutUs from "./_components/about-us";
 import Team from "./_components/team";
 import Blog from "./_components/blog";
+import VideoComponent from "./_components/videoComponent";
 
 export default function page() {
 	return (
-		<div className="min-h-screen">
+		<div className="min-h-screen overflow-x-hidden">
 			<HeroSection />
 			<ScheduleInfo />
+			<VideoComponent />
 			<Services />
 			<Prices />
 			<Gallery />

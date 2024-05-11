@@ -1,16 +1,14 @@
 "use client";
-import HeroVideo from "./hero-video";
+
 import Button from "@/components/button-component";
 
 export default function HeroSection() {
 	return (
-		<div className="relative w-full h-screen overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover bg-placeholder">
-			<HeroVideo />
-
+		<div className="relative w-full min-h-screen overflow-hidden bg-center bg-no-repeat bg-cover bg-placeholder">
 			<div className="absolute left-0 z-50 md:left-12 bottom-12">
 				<h1
 					style={{ fontSize: "clamp(2.5rem, 1.6713rem + 3.5359vw, 4.5rem)" }}
-					className="mb-5 ml-3 text-white capitalize text-balance w-[90%] font-staat"
+					className="hero__title_animation mb-5 ml-3 text-white capitalize text-balance w-[90%] font-staat"
 				>
 					Central London's most {""}
 					<span className="px-2 bg-white rounded-xl text-accent font-staat">
@@ -22,10 +20,10 @@ export default function HeroSection() {
 						2011.
 					</span>
 				</h1>
-				<p className="mb-8 ml-3 text-sm italic font-bold leading-tight text-white uppercase">
+				<p className="mb-8 ml-3 text-sm italic font-bold leading-tight text-white uppercase hero__subtitle_animation">
 					We Are The best you can find in Bloomsburg
 				</p>
-				<div className="flex items-center mx-3">
+				<div className="flex items-center mx-3 hero__button_animation">
 					<Button
 						link={"https://www.fresha.com/providers/decadence-el3a9eor"}
 						text={"Book an Appointment"}
@@ -34,8 +32,8 @@ export default function HeroSection() {
 				</div>
 			</div>
 
-			<div className="absolute inset-x-0 bottom-0 w-full h-full bg-black bg-opacity-30"></div>
-			<div className="absolute inset-x-0 bottom-0 bg-opacity-50 top-1/2 bg-gradient-to-b from-transparent to-black"></div>
+			<div className="absolute inset-x-0 bottom-0 w-full h-full bg-black bg-opacity-30" />
+			<div className="absolute inset-x-0 bottom-0 bg-opacity-50 top-1/2 bg-gradient-to-b from-transparent to-black" />
 		</div>
 	);
 }

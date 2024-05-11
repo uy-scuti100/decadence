@@ -65,7 +65,8 @@ export default function Footer() {
 					</a>
 				</div>
 				{/* links */}
-				<div className="flex flex-col gap-6 justify-evenly sm:flex-row mb-9 ">
+				<div className="grid grid-cols-2 gap-6 sm:grid-cols-3 mb-9 justify-items-center">
+					{/* flex flex-col gap-6 justify-evenly sm:flex-row mb-9 */}
 					<div className="flex flex-col gap-4">
 						<h2 className="pb-3 text-lg tracking-wider transition-all duration-300 ease-in-out ">
 							QUICK LINKS

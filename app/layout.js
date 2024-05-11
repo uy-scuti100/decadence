@@ -2,6 +2,7 @@ import { Inter, Open_Sans, Staatliches } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/header";
 import Footer from "@/components/footer";
+import Floating from "@/components/floating";
 
 const staatliches = Staatliches({
 	subsets: ["latin"],
@@ -67,6 +68,7 @@ export default function RootLayout({ children }) {
 			>
 				<Navbar />
 				{children}
+				<Floating />
 				<Footer />
 			</body>
 		</html>

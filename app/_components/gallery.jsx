@@ -16,13 +16,13 @@ export default function Gallery() {
 					</div>
 
 					<p className="justify-end flex-1 max-w-2xl text-base font-normal text-center md:text-right text-dark text-balance">
-						Ultimate grooming for the modern man. Look and feel your best with
-						our skilled stylists and premium products.
+						Ultimate grooming for the modern men and women. Look and feel your
+						best with our skilled stylists and premium products.
 					</p>
 				</div>
 			</div>
 
-			<div className="grid grid-cols-2 gap-4 mt-10 md:grid-cols-4">
+			<div className="grid grid-cols-1 gap-4 mt-10 sm:grid-cols-2 md:grid-cols-4">
 				<div className="grid gap-4">
 					<div>
 						<img

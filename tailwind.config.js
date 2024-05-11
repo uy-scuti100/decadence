@@ -1,9 +1,3 @@
-// const defaultTheme = require("tailwindcss/defaultTheme");
-// const colors = require("tailwindcss/colors");
-// const {
-// 	default: flattenColorPalette,
-// } = require("tailwindcss/lib/util/flattenColorPalette");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	darkMode: ["class"],
@@ -24,7 +18,9 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-				placeholder: "url('/place-holder.png')",
+				placeholder:
+					"url('https://decadencesalon.co.uk/wp-content/uploads/2017/02/decadence-salon-pic-14.jpg')",
+				placeholders: "url('/place-holder.png')",
 				about: "url('/black and white.webp')",
 			},
 			colors: {
@@ -34,8 +30,8 @@ module.exports = {
 				"light-accent": "#E0D297",
 			},
 			fontFamily: {
-				inter: ["var(--font-inter),sans-serif"],
-				staat: ["var(--font-staat),serif"],
+				inter: ["var(--font-inter), sans-serif"],
+				staat: ["var(--font-staat), serif"],
 			},
 			keyframes: {
 				"accordion-down": {
