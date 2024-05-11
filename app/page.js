@@ -13,7 +13,7 @@ import VideoComponent from "./_components/videoComponent";
 
 export default function page() {
 	return (
-		<div className="min-h-screen overflow-x-hidden">
+		<div className="min-h-screen">
 			<HeroSection />
 			<ScheduleInfo />
 			<VideoComponent />

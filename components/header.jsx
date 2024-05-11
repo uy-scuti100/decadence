@@ -25,7 +25,7 @@ export default function Navbar() {
 	};
 	return (
 		<>
-			<header className="absolute top-0 duration-500 ease-in-out transition-all z-[9999999] px-3 inset-x-0 shadow-sm bg-white border-b w-full">
+			<header className="fixed right-0 left-0 w-full  top-0 duration-500 ease-in-out transition-all z-[9999999] px-3 shadow-sm bg-white border-b">
 				<nav className="flex items-center justify-between md:py-0">
 					<Link href={"/"}>
 						<Image

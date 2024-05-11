@@ -63,9 +63,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body
-				className={`${inter.variable} ${open_sans.variable} ${staatliches.variable} antialiased`}
-			>
+			<body>
 				<Navbar />
 				{children}
 				<Floating />
