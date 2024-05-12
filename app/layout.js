@@ -46,6 +46,7 @@ export const metadata = {
 				url: "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/407372896_1340780169901417_933016704107870773_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=101&_nc_ohc=N7dwtXOD62UQ7kNvgE_ntHr&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfAC0VK2qR1MCGWkTH3bgXC1esRs3Zht7zSb5r92VP0PDA&oe=664219B6&_nc_sid=10d13b",
 			},
 		],
+		icons: icons,
 	},
 	twitter: {
 		card: "summary_large_image",
@@ -72,7 +73,7 @@ export default function RootLayout({ children }) {
 					<Navbar />
 					<MobileNav />
 					{children}
-					{/* <Floating /> */}
+					<Floating />
 					<Footer />
 				</body>
 			</NavContextProvider>

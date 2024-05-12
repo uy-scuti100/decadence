@@ -32,7 +32,7 @@ export default function Footer() {
 				</form>
 				<div className="flex mx-auto mb-16 text-lg gap-x-12 max-w-max">
 					<a
-						href="#"
+						href={"https://www.instagram.com/decadencesalon/"}
 						rel="noreferrer"
 						target="_blank"
 						className="transition-all duration-300 ease-in-out hover:scale-95 hover:text-accent"
@@ -40,7 +40,7 @@ export default function Footer() {
 						<FaInstagram />
 					</a>
 					<a
-						href="#"
+						href={"https://www.instagram.com/decadencesalon/"}
 						rel="noreferrer"
 						target="_blank"
 						className="transition-all duration-300 ease-in-out hover:scale-95 hover:text-accent"
@@ -65,8 +65,7 @@ export default function Footer() {
 					</a>
 				</div>
 				{/* links */}
-				<div className="grid grid-cols-2 gap-6 sm:grid-cols-3 mb-9 justify-items-center">
-					{/* flex flex-col gap-6 justify-evenly sm:flex-row mb-9 */}
+				<div className="flex flex-wrap gap-6 justify-evenly sm:flex-row mb-9">
 					<div className="flex flex-col gap-4">
 						<h2 className="pb-3 text-lg tracking-wider transition-all duration-300 ease-in-out ">
 							QUICK LINKS

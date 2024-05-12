@@ -1,17 +1,35 @@
 "use client";
+
 import React, { useState } from "react";
+import { TbCaretUp } from "react-icons/tb";
 
 export default function Floating() {
 	const [showButton, setShowButton] = useState(false);
+
+	const toggle = () => {
+		var currentPosition = window.scrollY || document.documentElement.scrollTop;
+		if (currentPosition > 0) {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		}
+	};
+
+	// Add a scroll event listener to the window object
 	if (typeof window !== "undefined") {
 		window.addEventListener("scroll", function () {
+			// Get the current scroll position
 			var currentPosition =
 				window.scrollY || document.documentElement.scrollTop;
 
+			// Get the height of the viewport
 			var viewportHeight = window.innerHeight;
 
-			var threshold = viewportHeight / 2;
+			// Set a threshold for showing the button (in this case, half the viewport height)
+			var threshold = viewportHeight / 3;
 
+			// If the current scroll position is greater than the threshold, show the button
 			if (currentPosition > threshold) {
 				setShowButton(true);
 			} else {
@@ -20,24 +38,13 @@ export default function Floating() {
 		});
 	}
 	return (
-		<div
+		<button
+			onClick={toggle}
 			className={`${
-				showButton ? "opacity-1 translate-y-0" : "opacity-0 translate-y-[-200%]"
-			} fixed left-6 bottom-10 pointer-events-none z-[99999]">
-			<div className="relative w-20 h-20 border rounded-full sm:w-32 sm:h-32 border-accent transition-all duration-1000 ease-in-out`}
+				showButton ? "opacity-1 translate-x-0" : "opacity-0 translate-x-[200%]"
+			} bg-[#27272A] fixed rounded-full  h-10 w-10 flex justify-center items-center bottom-5 right-5 z-50  transition-all duration-700 ease-in-out`}
 		>
-			<div>
-				<img
-					src="/rotating.png"
-					alt=""
-					className="object-cover w-full h-full animate-spin-slow"
-				/>
-				<img
-					src="/emblem.png"
-					alt=""
-					className="absolute object-cover w-12 h-12 -translate-x-1/2 -translate-y-1/2 sm:w-20 sm:h-20 top-1/2 left-1/2"
-				/>
-			</div>
-		</div>
+			<TbCaretUp className="text-3xl cursor-pointer text-accent" />
+		</button>
 	);
 }
