@@ -12,7 +12,7 @@ export default function MobileNav() {
 		<nav>
 			{open && (
 				<nav
-					className={`absolute inset-0 z-[99999999999] md:hidden w-full bg-white text-black ${
+					className={`absolute overflow-hidden inset-0 z-[99999999999] md:hidden w-full bg-white text-black ${
 						open
 							? " left-0 transition-all duration-300 ease-linear "
 							: "left-[-150%] transition-all duration-300 ease-linear"
