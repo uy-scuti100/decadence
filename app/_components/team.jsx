@@ -50,7 +50,7 @@ const masters = [
 ];
 export default function Team() {
 	return (
-		<section className="relative pb-40 maxxy bg-light-accent/20 choose_us_section">
+		<section className="relative pb-32 mb-20 maxxy bg-light-accent/20 choose_us_section">
 			<div className="pt-24 ">
 				<div className="flex flex-col gap-10 pt-20">
 					<div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">

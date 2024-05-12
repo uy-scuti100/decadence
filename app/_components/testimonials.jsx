@@ -7,7 +7,7 @@ import data3 from "@/utils/data/rev3.json";
 
 export default function Testimonials() {
 	return (
-		<section className="relative mt-40 maxxy">
+		<section className="relative mt-32 maxxy">
 			<div className="absolute md:bg-accent/30 bg-accent/20 h-[20vh] w-[50vh] top-20 left-1/3 -translate-x-1/2 -translate-y-1/2 -z-10 blur-[120px]" />
 			<div className="flex flex-col gap-10">
 				<div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
