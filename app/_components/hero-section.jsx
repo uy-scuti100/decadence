@@ -1,10 +1,12 @@
 "use client";
 
 import Button from "@/components/button-component";
+import Navbar from "@/components/header";
 
 export default function HeroSection() {
 	return (
 		<div className="relative w-full min-h-screen overflow-hidden bg-center bg-no-repeat bg-cover bg-placeholder">
+			{/* <Navbar /> */}
 			<div className="absolute left-0 z-50 md:left-12 bottom-12">
 				<h1
 					style={{ fontSize: "clamp(2.5rem, 1.6713rem + 3.5359vw, 4.5rem)" }}

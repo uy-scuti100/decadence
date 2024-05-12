@@ -4,7 +4,7 @@ import Button from "@/components/button-component";
 
 export default function VideoComponent() {
 	return (
-		<section className="relative mt-40">
+		<section className="relative hidden mt-40 md:lbock">
 			<div>
 				<div className="flex flex-col items-center justify-center mt-20">
 					<h2 className="pb-10 text-4xl text-center font-staat text-balance max-w-[600px]">

@@ -13,7 +13,7 @@ import VideoComponent from "./_components/videoComponent";
 
 export default function page() {
 	return (
-		<div className="min-h-screen">
+		<div>
 			<HeroSection />
 			<ScheduleInfo />
 			<VideoComponent />

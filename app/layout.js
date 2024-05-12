@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/header";
 import Footer from "@/components/footer";
 import Floating from "@/components/floating";
+import { NavContextProvider } from "@/context";
+import MobileNav from "@/components/mobile-nav";
 
 const staatliches = Staatliches({
 	subsets: ["latin"],
@@ -34,11 +36,11 @@ export const metadata = {
 		"Central London's Most Favourite Boutique For Hair & Beauty Since 2011.",
 	openGraph: {
 		type: "website",
-		url: "https://andre-armani.vercel.app/",
-		title: "",
+		url: "decadence.vercel.app/",
+		title: "Decadence Hair and Beauty",
 		description:
 			"Central London's Most Favourite Boutique For Hair & Beauty Since 2011.",
-		siteName: "Andre Armani",
+		siteName: "Decadence Hair and Beauty",
 		images: [
 			{
 				url: "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/407372896_1340780169901417_933016704107870773_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=101&_nc_ohc=N7dwtXOD62UQ7kNvgE_ntHr&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfAC0VK2qR1MCGWkTH3bgXC1esRs3Zht7zSb5r92VP0PDA&oe=664219B6&_nc_sid=10d13b",
@@ -63,12 +65,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body>
-				<Navbar />
-				{children}
-				<Floating />
-				<Footer />
-			</body>
+			<NavContextProvider>
+				<body
+					className={`${inter.variable} ${open_sans.variable} ${staatliches.variable} antialiased`}
+				>
+					<Navbar />
+					<MobileNav />
+					{children}
+					{/* <Floating /> */}
+					<Footer />
+				</body>
+			</NavContextProvider>
 		</html>
 	);
 }
