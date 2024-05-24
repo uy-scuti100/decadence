@@ -12,11 +12,8 @@ export default function Testimonials() {
 			<div className="flex flex-col gap-10">
 				<div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
 					<div>
-						<h3 className="tracking-wider text-center uppercase md:text-left text-accent">
-							what clients say
-						</h3>
-						<h2 className="text-3xl font-bold tracking-wider text-center md:text-5xl sm:text-left">
-							Clients Feedback
+						<h2 className="text-3xl font-bold tracking-wider text-center uppercase md:text-5xl sm:text-left">
+							what our clients say
 						</h2>
 					</div>
 					<p className="justify-end flex-1 max-w-2xl text-base font-normal text-center md:text-right text-dark text-balance">

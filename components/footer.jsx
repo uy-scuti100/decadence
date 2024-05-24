@@ -75,7 +75,7 @@ export default function Footer() {
 						<div className="flex flex-col gap-5 ">
 							<Link
 								href={"/"}
-								className="inline text-sm capitalize font-inter sm:text-base"
+								className="inline text-sm underline capitalize font-inter sm:text-base"
 							>
 								Home
 							</Link>
