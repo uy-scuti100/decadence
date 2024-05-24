@@ -26,7 +26,9 @@ export default function Footer() {
 					/>
 					<Button
 						link={""}
-						className={"w-max px-10 whitespace-nowrap"}
+						className={
+							"w-max px-10 whitespace-nowrap text-white bg-accent border-none"
+						}
 						text={"Claim your spot now!"}
 					></Button>
 				</form>
@@ -73,49 +75,49 @@ export default function Footer() {
 						<div className="flex flex-col gap-5 ">
 							<Link
 								href={"/"}
-								className="inline text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="inline text-sm capitalize font-inter sm:text-base"
 							>
 								Home
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Shop
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Team
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Pricing
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Products
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Gallery
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Career
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Contact
 							</Link>
@@ -128,31 +130,31 @@ export default function Footer() {
 						<div className="flex flex-col gap-5 ">
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Hair Cuts
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Styling
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Colouring
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Beauty Therapy
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Body Massage
 							</Link>
@@ -165,13 +167,13 @@ export default function Footer() {
 						<div className="flex flex-col gap-5 ">
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Privacy Policy
 							</Link>
 							<Link
 								href={"/"}
-								className="text-sm capitalize transition-all duration-300 ease-in-out hover:underline font-inter hover:text-accent hover:pl-3 sm:text-base"
+								className="text-sm underline capitalize font-inter sm:text-base"
 							>
 								Terms & Conditions
 							</Link>
@@ -180,74 +182,9 @@ export default function Footer() {
 				</div>
 				{/* social buttons */}
 			</div>
-			<div className="relative w-full my-20 select-none md:mx-auto ">
-				<div className="flex overflow-hidden skew-x-12 scroll-smooth whitespace-nowrap">
-					<div className="logo_carousel">
-						<h1 className="text-[12vh] font-semibold ">
-							{" "}
-							DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE
-							HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.DECADENCE HAIR AND
-							BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.
-							DECADENCE HAIR AND BEAUTY.
-						</h1>
-					</div>
-					<div className="logo_carousel">
-						<div className="text-[12vh] font-semibold">
-							<h1>
-								DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE
-								HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.DECADENCE HAIR AND
-								BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.
-								DECADENCE HAIR AND BEAUTY.
-							</h1>
-						</div>
-					</div>
-				</div>
-				<div className="flex overflow-hidden skew-x-12 scroll-smooth whitespace-nowrap ">
-					<div className="logo_carousel_two">
-						<h1 className="text-[12vh] font-semibold text-accent">
-							{" "}
-							DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE
-							HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.DECADENCE HAIR AND
-							BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.
-							DECADENCE HAIR AND BEAUTY.
-						</h1>
-					</div>
-					<div className="logo_carousel_two">
-						<div className="text-[12vh] font-semibold text-accent">
-							<h1>
-								DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE
-								HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.DECADENCE HAIR AND
-								BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.
-								DECADENCE HAIR AND BEAUTY.
-							</h1>
-						</div>
-					</div>
-				</div>
-				<div className="flex overflow-hidden skew-x-12 scroll-smooth whitespace-nowrap">
-					<div className="logo_carousel_three">
-						<h1 className="text-[12vh] font-semibold transparent-text">
-							{" "}
-							DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE
-							HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.DECADENCE HAIR AND
-							BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.
-							DECADENCE HAIR AND BEAUTY.
-						</h1>
-					</div>
-					<div className="logo_carousel_three">
-						<div className="text-[12vh] font-semibold transparent-text ">
-							<h1>
-								DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE
-								HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.DECADENCE HAIR AND
-								BEAUTY. DECADENCE HAIR AND BEAUTY. DECADENCE HAIR AND BEAUTY.
-								DECADENCE HAIR AND BEAUTY.
-							</h1>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div className="py-10 bprder-t border-t-primary">
 				<div className="container mx-auto">
-					<div className="text-center text-primary">
+					<div className="text-xs text-center opacity-75">
 						copyright &copy; Decadence Hair and Beauty{" "}
 						{new Date().getFullYear()}. All rights reserved.
 					</div>

@@ -16,14 +16,13 @@ export default function page() {
 		<div>
 			<HeroSection />
 			<ScheduleInfo />
-			<VideoComponent />
+			<Testimonials />
+			<Team />
 			<Services />
 			<Prices />
-			<Gallery />
 			<WhyChoseUs />
+			<Gallery />
 			<AboutUs />
-			<Team />
-			<Testimonials />
 			<Blog />
 		</div>
 	);

@@ -25,6 +25,10 @@ const videos = [
 		link: "/body- assage.mp4",
 		type: "Body masssage",
 	},
+	{
+		link: "/consultation.mp4",
+		type: "Consultation",
+	},
 ];
 
 const images = [
@@ -49,6 +53,11 @@ const images = [
 		link: "/pex-2.jpg",
 
 		type: "Body masssage",
+	},
+	{
+		link: "/consultation.jpg",
+
+		type: "Consultation",
 	},
 ];
 
@@ -75,11 +84,8 @@ export default function Services() {
 			<div className="flex flex-col gap-10">
 				<div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
 					<div>
-						<h3 className="tracking-wider text-center uppercase md:text-left text-accent">
-							Our Main services
-						</h3>
-						<h2 className="text-3xl font-bold tracking-wider text-center md:text-5xl sm:text-left">
-							OUR SPECIALITIES
+						<h2 className="text-3xl font-bold tracking-wider text-center uppercase md:text-5xl sm:text-left">
+							Our services
 						</h2>
 					</div>
 
@@ -114,6 +120,7 @@ export const ImageComponent = () => {
 				images.map((item, i) => {
 					return (
 						<div className=" w-full h-[400px] relative " key={i}>
+							<div className="absolute inset-0 bg-black/30 rounded-3xl"></div>
 							<img
 								src={item.link}
 								alt={item.type}
@@ -121,7 +128,7 @@ export const ImageComponent = () => {
 								className="object-cover w-full h-[400px] rounded-3xl"
 							/>
 
-							<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3 left-4 bottom-5 sm:bottom-3">
+							<div className="absolute z-20 flex flex-col items-center justify-center gap-2 pl-3 left-4 bottom-5 sm:bottom-3">
 								<h1 className="text-3xl font-bold text-white">{item.type}</h1>
 							</div>
 						</div>
@@ -137,6 +144,7 @@ export const VideoComponent = () => {
 				videos.map((item, i) => {
 					return (
 						<div className="relative w-full h-[400px] " key={i}>
+							<div className="absolute inset-0 bg-black/30 rounded-3xl"></div>
 							<video
 								autoPlay
 								defaultmuted
@@ -152,7 +160,7 @@ export const VideoComponent = () => {
 										style={{ pointerEvents: "none" }}
 										className="absolute inset-0 z-10"
 									></div> */}
-							<div className="absolute flex flex-col items-center justify-center gap-2 border-accent border-l-[8px] pl-3 left-4 bottom-5 sm:bottom-3">
+							<div className="absolute flex flex-col items-center justify-center gap-2 pl-3 left-4 bottom-5 sm:bottom-3">
 								<h1 className="text-3xl font-bold text-white">{item.type}</h1>
 							</div>
 						</div>

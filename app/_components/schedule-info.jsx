@@ -13,7 +13,7 @@ export default function ScheduleInfo() {
 				className="grid items-center grid-cols-1 gap-10 px-5 mx-auto cards_wrapper place-items-center sm:px-8 md:grid-cols-2 lg:grid-cols-3"
 			>
 				<div className="flex flex-col items-center justify-center w-full h-full px-4 py-10 text-center rounded-lg shadow-xl bg-gradient-to-br from-white to-light-accent/10 text-dark">
-					<h1 className="pb-8 text-6xl text-accent">
+					<h1 className="pb-8 text-6xl opacity-50">
 						<CiLocationOn />
 					</h1>
 					<div className="flex flex-col gap-2">
@@ -23,7 +23,7 @@ export default function ScheduleInfo() {
 					</div>
 				</div>
 				<div className="flex flex-col items-center justify-center w-full h-full px-4 py-10 text-center rounded-lg shadow-xl bg-gradient-to-br from-white to-light-accent/10 text-dark ">
-					<h1 className="pb-8 text-6xl text-accent">
+					<h1 className="pb-8 text-6xl opacity-50">
 						<CiMail />
 					</h1>
 					<div className="flex flex-col items-center justify-center gap-2 ">
@@ -49,7 +49,7 @@ export default function ScheduleInfo() {
 					</div>
 				</div>
 				<div className="flex flex-col items-center justify-center w-full h-full px-4 py-10 text-center rounded-lg shadow-xl bg-gradient-to-br from-white to-light-accent/10 text-dark ">
-					<h1 className="p-8 text-6xl text-accent">
+					<h1 className="p-8 text-6xl opacity-50">
 						<CiClock2 />
 					</h1>
 					<div className="flex flex-col gap-2 tracking-wider">
@@ -68,7 +68,7 @@ export default function ScheduleInfo() {
 {
 	/* <div className="grid items-center grid-cols-1 gap-10 px-5 mx-auto cards_wrapper place-items-center sm:px-8 md:grid-cols-2 lg:grid-cols-3">
 	<div className="flex flex-col items-center justify-center w-full h-full px-4 py-10 text-center rounded-lg shadow-xl bg-gradient-to-br from-white to-light-accent/10 text-dark">
-		<h1 className="pb-8 text-6xl text-accent">
+		<h1 className="pb-8 text-6xl">
 			<CiLocationOn />
 		</h1>
 		<div className="flex flex-col gap-2">
@@ -78,7 +78,7 @@ export default function ScheduleInfo() {
 		</div>
 	</div>
 	<div className="flex flex-col items-center justify-center w-full h-full px-4 py-10 text-center rounded-lg shadow-xl bg-gradient-to-br from-white to-light-accent/10 text-dark ">
-		<h1 className="pb-8 text-6xl text-accent">
+		<h1 className="pb-8 text-6xl">
 			<CiMail />
 		</h1>
 		<div className="flex flex-col items-center justify-center gap-2 ">

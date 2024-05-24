@@ -55,9 +55,6 @@ export default function Team() {
 				<div className="flex flex-col gap-10 pt-20">
 					<div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
 						<div>
-							<h3 className="tracking-wider text-center uppercase md:text-left text-accent">
-								Our team
-							</h3>
 							<h2 className="text-3xl font-bold tracking-wider text-center uppercase md:text-5xl sm:text-left">
 								Meet the stylists
 							</h2>
@@ -77,8 +74,8 @@ export default function Team() {
 					{masters.map((master, i) => {
 						const { name, image, info } = master;
 						return (
-							<div key={i} className="group">
-								<div className="relative h-[400px] mb-4 group-hover:scale-95 transition-all duration-300 ease-linear">
+							<div key={i} className="">
+								<div className="relative h-[400px] mb-4">
 									<Image
 										src={image}
 										alt={name}
@@ -86,7 +83,7 @@ export default function Team() {
 										className="object-cover bg-top rounded-3xl"
 									/>
 								</div>
-								<div className="py-2 pl-5 bg-light-accent/20 group-hover:scale-95  border-l-[3px] border-accent transition-all duration-300 ease-linear">
+								<div className="py-2">
 									<h2 className="pb-2 text-xl font-bold font-staat">{name}</h2>
 									<p className="pb-2 text-xs uppercase">{info}</p>
 								</div>

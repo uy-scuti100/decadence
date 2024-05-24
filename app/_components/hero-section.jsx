@@ -9,18 +9,13 @@ export default function HeroSection() {
 			{/* <Navbar /> */}
 			<div className="absolute left-0 z-50 md:left-12 bottom-12">
 				<h1
-					style={{ fontSize: "clamp(2.5rem, 1.6713rem + 3.5359vw, 4.5rem)" }}
-					className="hero__title_animation mb-5 ml-3 text-white capitalize text-balance w-[90%] font-staat"
+					// style={{ fontSize: "clamp(2.5rem, 1.6713rem + 3.5359vw, 4.5rem)" }}
+					className="hero__title_animation mb-5 ml-3 text-white capitalize text-balance w-[90%] font- leading-0 font-[Miracle] text-4xl md:text-6xl sm:text-5xl"
 				>
-					Central London's most {""}
-					<span className="px-2 bg-white rounded-xl text-accent font-staat">
-						favourite
-					</span>{" "}
-					boutique
-					<br className="hidden sm:block" /> for hair & beauty Since{" "}
-					<span className="px-2 bg-white rounded-xl text-accent font-staat">
-						2011.
-					</span>
+					Bloomsburg's most {""}
+					favourite boutique {""}
+					<br className="hidden sm:block" />
+					for hair & beauty Since 2011.
 				</h1>
 				<p className="mb-8 ml-3 text-sm italic font-bold leading-tight text-white uppercase hero__subtitle_animation">
 					We Are The best you can find in Bloomsburg
@@ -29,7 +24,9 @@ export default function HeroSection() {
 					<Button
 						link={"https://www.fresha.com/providers/decadence-el3a9eor"}
 						text={"Book an Appointment"}
-						className={"sm:px-20 w-full sm:w-auto px-0"}
+						className={
+							"sm:px-20 w-full sm:w-auto px-0 text-white border-white "
+						}
 					></Button>
 				</div>
 			</div>

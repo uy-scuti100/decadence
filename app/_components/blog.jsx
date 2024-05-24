@@ -10,9 +10,6 @@ export default function Blog() {
 			<div className="flex flex-col gap-10">
 				<div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
 					<div>
-						<h3 className="tracking-wider text-center uppercase md:text-left text-accent">
-							LATEST FROM OUR BLOG
-						</h3>
 						<h2 className="text-3xl font-bold tracking-wider text-center md:text-5xl sm:text-left">
 							LATEST ARTICLES
 						</h2>
@@ -30,13 +27,13 @@ export default function Blog() {
 						{blogInfo.map((blog, i) => {
 							const { title, image, date } = blog;
 							return (
-								<div key={i} className="cursor-pointer group">
-									<div className="relative h-[300px] mb-4 group-hover:scale-95 transition-all duration-300 ease-linear">
+								<div key={i} className="cursor-pointer ">
+									<div className="relative h-[300px] mb-4">
 										<Image
 											src={image}
 											alt={title}
 											fill
-											className="object-cover transition-all duration-300 ease-linear object-tp rounded-3xl group-hover:grayscale"
+											className="object-cover transition-all duration-300 ease-linear rounded-3xl group-hover:grayscale"
 										/>
 									</div>
 									<small>
@@ -44,8 +41,8 @@ export default function Blog() {
 											{date}
 										</p>
 									</small>
-									<div className="py-2 pl-5 transition-all duration-300 ease-linear border-l-4 bg-light-accent/20 group-hover:scale-95 hover:text-accent border-accent">
-										<h2 className="text-2xl font-bold font-staat">{title}</h2>
+									<div className="py-2 ">
+										<h2 className="text-xl font-bold font-staat">{title}</h2>
 									</div>
 								</div>
 							);

@@ -53,11 +53,8 @@ export default function WhyChoseUs() {
 				<div className="flex flex-col gap-10 pt-20">
 					<div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
 						<div>
-							<h3 className="tracking-wider text-center uppercase md:text-left text-accent">
-								WHY CHOOSE OUR SHOP?
-							</h3>
-							<h2 className="text-3xl font-bold tracking-wider text-center md:text-5xl sm:text-left">
-								OUR DIFFERENCES
+							<h2 className="text-3xl font-bold tracking-wider text-center uppercase md:text-5xl sm:text-left">
+								why choose decadence
 							</h2>
 						</div>
 
@@ -76,21 +73,17 @@ export default function WhyChoseUs() {
 								<AccordionItem
 									key={index}
 									value={`item-${index + 1}`}
-									className="relative py-6 transition-all duration-1000 ease-linear hover:bg-light-accent/20 group"
+									className="relative px-3 py-6 transition-all duration-500 ease-linear hover:bg-light-accent/20 group"
 								>
-									<div className="absolute left-0 w-3 h-3 transition-all duration-500 ease-in-out rounded-full top-3 group-hover:top-2/3 group-hover:left-1/2 sm:group-hover:left-2/3 bg-accent group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 mix-blend-difference"></div>
-									<AccordionTrigger>
+									<AccordionTrigger className="hover:no-underline">
 										<div className="flex items-center gap-3 transition-all duration-500 ease-in-out hover:scale-95">
-											<div className="relative">
-												<span>{item.icon}</span>
-											</div>
-											<h4 className="text-2xl font-medium font-staat">
+											<h4 className="font-medium capitalize font-staat">
 												{item.title}
 											</h4>
 										</div>
 									</AccordionTrigger>
 									<AccordionContent className="flex flex-col items-start justify-between gap-10 p-2 md:flex-row">
-										<p className="flex-1 text-lg text-balance">{item.text}</p>
+										<p className="flex-1 text-balance">{item.text}</p>
 										<div className=" flex-1 w-full h-[200px]rounded-lg">
 											<Image
 												src={item.image}

@@ -23,7 +23,7 @@ const invoices = [
 		totalAmount: "£40",
 	},
 	{
-		invoice: "Airtouch / Babylights",
+		invoice: "Airtouch ",
 		totalAmount: "£250",
 	},
 	{
@@ -53,7 +53,7 @@ const invoicesTwo = [
 		totalAmount: "£100",
 	},
 	{
-		invoice: "Kevin Murphy Experience",
+		invoice: "Kevin Murphy Exp.",
 		totalAmount: "£29",
 	},
 	{
@@ -79,31 +79,32 @@ export function PriceTable() {
 
 	return (
 		isClient && (
-			<Table className="flex flex-col items-center justify-between">
+			<Table className="flex flex-col items-center justify-between gap-3  md:flex-row">
 				<TableBody className="flex flex-col items-center justify-between w-full">
 					{invoices.map((invoice) => (
-						<TableRow key={invoice.invoice} className="w-full border-none ">
-							<div className="relative flex justify-between w-full text-lg transition-transform duration-300 ease-linear border-none hover:scale-95">
+						<TableRow key={invoice.invoice} className="w-full">
+							<div className="relative flex justify-between w-full text-lg">
 								<TableCell className="font-medium font-staat">
 									{invoice.invoice}
 								</TableCell>
-								<div className="absolute h-px -translate-x-0 sm:-translate-x-1/2 md:-translate-x-[40%] -translate-y-1/2 bg-black top-1/2 left-1/2 md:w-[70%] sm:w-[40%] w-[25%]" />
-								<TableCell className="text-lg text-right text-accent font-staat">
+								<div className="absolute w-full h-px -translate-x-1/2 -translate-y-1/2 left1/2 top-1/2" />
+								<TableCell className="text-lg text-right text-black font-staat">
 									{invoice.totalAmount}
 								</TableCell>
 							</div>
 						</TableRow>
 					))}
 				</TableBody>
-				<TableBody className="flex flex-col items-center w-full">
+				{/* absolute h-px -translate-x-0 sm:-translate-x-1/2 md:-translate-x-[40%] -translate-y-1/2 bg-black top-1/2 left-1/2 md:w-[70%] sm:w-[40%] w-[25%] */}
+				<TableBody className="flex-col items-center hidden w-full md:flex ">
 					{invoicesTwo.map((invoice) => (
-						<TableRow key={invoice.invoice} className="w-full border-none ">
-							<div className="relative flex justify-between w-full text-lg transition-transform duration-300 ease-linear border-none hover:scale-95">
+						<TableRow key={invoice.invoice} className="w-full ">
+							<div className="relative flex justify-between w-full text-lg">
 								<TableCell className="font-medium font-staat">
 									{invoice.invoice}
 								</TableCell>
-								<div className="absolute h-px -translate-x-0 sm:-translate-x-1/2 md:-translate-x-[40%] -translate-y-1/2 bg-black top-1/2 left-1/2 md:w-[70%] sm:w-[40%] w-[25%]" />
-								<TableCell className="text-lg text-right text-accent font-staat">
+								<div className="absolute w-full h-px -translate-x-1/2 -translate-y-1/2 left1/2 top-1/2" />
+								<TableCell className="text-lg text-right text-black font-staat">
 									{invoice.totalAmount}
 								</TableCell>
 							</div>

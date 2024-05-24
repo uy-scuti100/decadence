@@ -9,11 +9,8 @@ export default function Prices() {
 			<div className="flex flex-col gap-10">
 				<div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
 					<div>
-						<h3 className="tracking-wider text-center uppercase md:text-left text-accent">
-							What We Offer
-						</h3>
-						<h2 className="text-3xl font-bold tracking-wider text-center md:text-5xl sm:text-left">
-							OUR PRICES
+						<h2 className="text-3xl font-bold tracking-wider text-center uppercase md:text-5xl sm:text-left">
+							Our Prices
 						</h2>
 					</div>
 

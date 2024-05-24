@@ -33,7 +33,7 @@ export default function Testimonials() {
 					<InfiniteMovingCards items={data3} speed="slow" />
 				</div>
 			</div>
-			<div className="flex flex-col items-center justify-center mt-20">
+			{/* <div className="flex flex-col items-center justify-center mt-20">
 				<p className="pb-10 text-4xl text-center font-staat">
 					Don't just take our word for it. See what others are saying about our
 					services.
@@ -45,7 +45,7 @@ export default function Testimonials() {
 					text={"See the reviews for yourself"}
 					className={"px-10 whitespace-nowrap"}
 				/>
-			</div>
+			</div> */}
 		</section>
 	);
 }
